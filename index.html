@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>小さな魔塔</title>
+</head>
+<body>
+<h1>小さな魔塔</h1>
+<div id="status">
+<div id="floor"></div>
+<div id="enemy"></div>
+<div id="gold"></div>
+</div>
+<button id="attack">攻撃</button>
+<div id="choices"></div>
+<div id="msg"></div>
+<script src="game.js"></script>
+<script>
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("service-worker.js");
+</script>
+</body>
+</html>
